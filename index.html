@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- custom CSS -->
+    <link rel="stylesheet" href="style.css" />
+    <title>Valoris</title>
+  </head>
+  <body>
+    <!--=====================================-->
+    <!-- NAVBAR with SearchBar -->
+    <!--=====================================-->
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <a href="index.html" class="navbar-brand img-fluid">
+          <img src="img/logo.png" alt="" class="logo" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="toggler-icon">
+            <ion-icon name="menu-outline"></ion-icon>
+          </span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-end align-items-center"
+          id="navbarNavDropdown"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active fw-bold" aria-current="page" href="/"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="shop.html">Shop</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Categories
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Home Accessories</a></li>
+                <li><a class="dropdown-item" href="#">Clothing</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <button class="btn btn-bg cart-btn text-white fs-3 position-relative">
+          <ion-icon name="cart-outline"></ion-icon>
+          <span
+            class="position-absolute top-25 start-100 translate-middle btn-pale rounded-circle"
+          >
+            <div class="cart-amount">0</div>
+          </span>
+        </button>
+        <form class="d-flex" role="search">
+          <input
+            class="form-control"
+            type="search"
+            placeholder="Search"
+            aria-label="Search"
+          />
+          <button class="btn btn-bg text-white fs-5" type="submit">
+            <ion-icon
+              name="search-outline"
+              class="text-white fs-3 searchicon"
+            ></ion-icon>
+          </button>
+        </form>
+      </div>
+    </nav>
+    <!--=====================================-->
+    <!-- carousel starts -->
+    <!--=====================================-->
+    <div id="carouselExampleIndicators" class="carousel slide">
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="3"
+          aria-label="Slide 4"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item c-item active">
+          <img src="img/banner-1.jpg" class="img-fluid w-100 c-img" alt="..." />
+          <div class="carousel-caption top-0 mt-5">
+            <p class="mt-5 fs-3 text-uppercase">Discover our collection</p>
+            <h5 class="display-1 fw-bolder text-capitalize">women outfits</h5>
+            <a
+              href="shop.html"
+              class="btn btn-pale text-capitalize px-4 py-3 fs-5 mt-4"
+            >
+              shop now
+            </a>
+          </div>
+        </div>
+        <div class="carousel-item c-item">
+          <img src="img/banner-2.jpg" class="img-fluid w-100 c-img" alt="..." />
+          <div class="carousel-caption top-0 mt-5">
+            <p class="mt-5 fs-3 text-uppercase">the season has arrived</p>
+            <h5 class="display-1 fw-bolder text-capitalize">jewellary</h5>
+            <a
+              href="shop.html"
+              class="btn btn-pale text-capitalize px-4 py-3 fs-5 mt-4"
+            >
+              shop now
+            </a>
+          </div>
+        </div>
+        <div class="carousel-item c-item">
+          <img src="img/banner-3.jpg" class="img-fluid w-100 c-img" alt="..." />
+          <div class="carousel-caption top-0 mt-5">
+            <p class="mt-5 fs-3 text-uppercase">destination activities</p>
+            <h5 class="display-1 fw-bolder text-capitalize">
+              favourable deals
+            </h5>
+            <a
+              href="shop.html"
+              class="btn btn-pale text-capitalize px-4 py-3 fs-5 mt-4"
+            >
+              shop now
+            </a>
+          </div>
+        </div>
+        <div class="carousel-item c-item">
+          <img src="img/banner-4.jpg" class="img-fluid w-100 c-img" alt="..." />
+          <div class="carousel-caption top-0 mt-5">
+            <p class="mt-5 fs-3 text-uppercase">approachable</p>
+            <h5 class="display-1 fw-bolder text-capitalize">
+              fashion calls you
+            </h5>
+            <a
+              href="shop.html"
+              class="btn btn-pale text-capitalize px-4 py-3 fs-5 mt-4"
+            >
+              shop now
+            </a>
+          </div>
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <!-- carousel ends -->
+    <!--============================-->
+    <!-- Featured Products -->
+    <!--============================-->
+
+    <!--============================-->
+    <!-- On-Sale Products -->
+    <!--============================-->
+    <section class="on-sale-products">
+      <div class="container">
+        <h2 class="text-center my-5">On Sale Products</h2>
+        <div class="row row-cols-1 row-cols-sm-3">
+          <div class="col">
+            <div class="sale-text">
+              <small>seasonal sale</small>
+              <p>
+                <strong>Get Extra 30% OFF</strong>
+              </p>
+            </div>
+            <div class="sale-image">
+              <img src="img/sale-product-1.webp" class="img-fluid" alt="" />
+            </div>
+          </div>
+          <div class="col">
+            <div class="sale-text">
+              <small>seasonal sale</small>
+              <p>
+                <strong>40% discount on MakeUp Items</strong>
+              </p>
+            </div>
+            <div class="sale-image">
+              <img src="img/sale-product-2.webp" class="img-fluid" alt="" />
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="sale-text">
+              <small>seasonal sale</small>
+              <p><strong>50% discount on Serums</strong> .</p>
+            </div>
+            <div class="sale-image">
+              <img src="img/sale-product-4.webp" class="img-fluid" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--============================-->
+    <!-- New Products -->
+    <!--============================-->
+    <!--============================-->
+    <!-- Our Store - Features -->
+    <!--============================-->
+    <section class="features">
+      <div class="container">
+        <div class="row row-cols-2 row-cols-md-4">
+          <div class="col p-5">
+            <ion-icon
+              name="shield-checkmark-outline"
+              class="fs-1 fw-bold"
+            ></ion-icon>
+            <div class="feature-text">
+              <p>
+                <strong>100% Original Items</strong> are available at company.
+              </p>
+            </div>
+          </div>
+          <div class="col p-5">
+            <ion-icon name="trail-sign-outline" class="fs-1 fw-bold"></ion-icon>
+            <div class="feature-text">
+              <p>
+                <strong>Return within 30 days</strong> of receiving your order.
+              </p>
+            </div>
+          </div>
+          <div class="col p-5">
+            <ion-icon name="bus-outline" class="fs-1 fw-bold"></ion-icon>
+            <div class="feature-text">
+              <p>
+                <strong>Get Free Delivery</strong> for every order on more than
+                price .
+              </p>
+            </div>
+          </div>
+          <div class="col p-5">
+            <ion-icon name="shuffle-outline" class="fs-1 fw-bold"></ion-icon>
+            <div class="feature-text">
+              <p>
+                <strong>Pay online</strong> through multiple payment options.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--=============-->
+    <!--FOOTER -->
+    <!--=============-->
+    <section class="footer shapedividers_com-2075 bg-footer text-color p-4">
+      <div class="container">
+        <!-- Custom shape divider -->
+
+        <div class="custom-shape-divider-top-1723234952">
+          <svg
+            data-name="Layer 1"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 1200 120"
+            preserveAspectRatio="none"
+          >
+            <path
+              d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z"
+              opacity=".25"
+              class="shape-fill"
+            ></path>
+            <path
+              d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z"
+              opacity=".5"
+              class="shape-fill"
+            ></path>
+            <path
+              d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z"
+              class="shape-fill"
+            ></path>
+          </svg>
+        </div>
+
+        <!--  Custom shape divider Ends -->
+
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 py-5">
+          <div class="col">
+            <h1 class="mb-3">Useful Links</h1>
+            <p>Privacy Policy</p>
+            <p>Terms of Use</p>
+            <p>Return Policy</p>
+            <p>Discount Coupons</p>
+          </div>
+          <div class="col">
+            <h1 class="mb-3">Company</h1>
+            <p>About Us</p>
+            <p>Contact Us</p>
+            <p>Career</p>
+            <p>Affiliate</p>
+          </div>
+          <div class="col">
+            <h1 class="mb-3">Follow us on</h1>
+            <p><ion-icon name="logo-facebook"></ion-icon>Facebook</p>
+            <p><ion-icon name="logo-linkedin"></ion-icon>LinkedIn</p>
+            <p><ion-icon name="logo-twitter"></ion-icon>Tweeter</p>
+            <p><ion-icon name="logo-instagram"></ion-icon>Instagram</p>
+            <p><ion-icon name="logo-youtube"></ion-icon>Youtube</p>
+          </div>
+          <div class="col">
+            <h1 class="mb-3">Download App From</h1>
+            <img src="img/apps.png" alt="" />
+          </div>
+        </div>
+        <hr class="h-75" />
+        <p>copyright 2024</p>
+      </div>
+    </section>
+
+    <!--* End Footer-Section *-->
+
+    <!-- Bootstrap Js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- ionicon link -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <!-- custom Js -->
+    <script src="script.js"></script>
+  </body>
+</html>
